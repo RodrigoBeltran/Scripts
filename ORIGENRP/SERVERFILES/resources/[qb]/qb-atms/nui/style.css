@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Bahianita|Do+Hyeon|Khand&display=swap');
+@font-face {
+    font-family: bankgothic;
+    src: url('./bankgothic.ttf');
+}
+/*
+font-family: 'Khand', sans-serif;
+font-family: 'Bahianita', cursive;
+font-family: 'Do Hyeon', sans-serif;
+*/
+
+body {
+    background: transparent !important;
+    margin-top:30px;
+}
+
+a{
+    color:black;
+    transition:ease-in-out 0.3s;
+}
+a:hover{
+    color:rgb(41, 41, 41);
+    transition:ease-in-out 0.3s;
+
+}
+
+#cardsDisplay { 
+    max-height: 560px;
+}
+.card-header{
+    background:none !important;
+}
+
+.title {
+    color: white;
+    margin-bottom:20px;
+    font-family: bankgothic;
+}
+
+#cardsDisplay::-webkit-scrollbar-track
+{
+    background-color: none;
+    border: none;
+}
+
+#cardsDisplay::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+#cardsDisplay::-webkit-scrollbar-thumb
+ {
+    background-color: rgb(26, 26, 26);
+    border: 2px solid rgb(26, 26, 26)
+}
+
+#cardSelector {
+    background-color: rgb(0 0 0 / 84%);
+    border-radius: 5px;
+    box-shadow:0 0 10px #000;
+    margin-top:6%;
+    animation: zoom-in 0.3s ease-in-out forwards;
+}
+
+#pinContainer {
+    background-color: rgb(0 0 0 / 84%);
+    border-radius: 5px;
+    box-shadow:0 0 10px #000;
+    margin-top:6%;
+    animation: zoom-in 0.3s ease-in-out forwards;
+
+
+}
+
+#bankingContainer {
+    background: rgb(26, 26, 26) !important;
+    border-radius: 10px;
+    min-height:800px;
+    max-height:800px;
+    display:none;
+    animation: zoom-in 0.3s ease-in-out forwards;
+    
+}
+
+#ATMContainer {
+    background: #000000cc !important;
+    border-radius: 5px;
+    min-height:800px;
+    max-height:800px;
+    display:none;
+    box-shadow:0 0 10px #000;
+    animation: zoom-in 0.3s ease-in-out forwards;
+    margin-top:6%;
+}
+
+.statement:hover {
+    background: rgb(26, 26, 26) !important;
+}
+
+#v-pills-tabContent, #v-pills-tabContent-atm {
+    overflow-y: scroll;
+    min-height:100%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color:black;
+    color:white;
+}
+
+.active{
+    color:white !important;
+}
+
+
+#v-pills-tabContent::-webkit-scrollbar-track, #v-pills-tabContent-atm::-webkit-scrollbar-track {
+    background-color:transparent;
+    border: none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar-thumb, #v-pills-tabContent-atm::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border:none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar, #v-pills-tabContent-atm::-webkit-scrollbar {
+    width: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:transparent;
+}
+
+.btn, button{
+    font-family: bankgothic;
+
+}
+.nav-pills, .btn, .card-header, #currentBalanceATM, #currentCashBalanceATM, #currentBalanceATM1, #currentCashBalance1ATM{
+    font-family: bankgothic;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color:black;
+    color:white;
+}
+
+.btn-dark{
+    background-color:black !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.774);
+    
+}
+.btn-secondary{
+    background-color:rgb(54, 54, 54) !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.774);
+
+}
+.btn-light{
+    background-color:white;
+    box-shadow:0 0 5px white;
+}
+.btn{
+    border-color:rgba(0, 0, 0, 0);
+    transition:ease-in-out 0.3s;
+
+}
+.btn:hover{
+    transform:scale(1.05);
+    transition:ease-in-out 0.3s;
+    border-color:rgba(0, 0, 0, 0);
+
+}
+
+.card{
+    box-shadow: 0 0 10px white;
+    background-color:white !important;
+}
+
+
+@keyframes zoom-in{
+    0%{
+        transform: scale(0.7);
+        opacity:0;
+    }
+    100%{
+        transform: scale(1);
+        opacity:100;
+    }
+}
+
+
+@media(max-height:720px){
+    body{
+        margin-top:0px;
+        overflow:hidden;
+    }
+    #ATMContainer{
+        margin-top:0px;
+    }
+}

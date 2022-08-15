@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.375dac6d.chunk.css",
+    "main.js": "./static/js/main.d04cbfae.chunk.js",
+    "main.js.map": "./static/js/main.d04cbfae.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.6a0c9813.js",
+    "runtime-main.js.map": "./static/js/runtime-main.6a0c9813.js.map",
+    "static/js/2.6dbae024.chunk.js": "./static/js/2.6dbae024.chunk.js",
+    "static/js/2.6dbae024.chunk.js.map": "./static/js/2.6dbae024.chunk.js.map",
+    "static/js/3.175b3a87.chunk.js": "./static/js/3.175b3a87.chunk.js",
+    "static/js/3.175b3a87.chunk.js.map": "./static/js/3.175b3a87.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.375dac6d.chunk.css.map": "./static/css/main.375dac6d.chunk.css.map",
+    "static/js/2.6dbae024.chunk.js.LICENSE.txt": "./static/js/2.6dbae024.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/boxed.65b846fa.TTF",
+    "static/media/OrigenCompanyLogo.6bda68e2.png": "./static/media/OrigenCompanyLogo.6bda68e2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a0c9813.js",
+    "static/js/2.6dbae024.chunk.js",
+    "static/css/main.375dac6d.chunk.css",
+    "static/js/main.d04cbfae.chunk.js"
+  ]
+}

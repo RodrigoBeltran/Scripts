@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Bahianita|Do+Hyeon|Khand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+/*
+font-family: 'Khand', sans-serif;
+font-family: 'Bahianita', cursive;
+font-family: 'Do Hyeon', sans-serif;
+*/
+@font-face {
+    font-family: gotbook;
+    src: url(https://cdn.discordapp.com/attachments/644631964774694942/738180868748607649/GOTHAM-MEDIUM.OTF);
+}
+
+@font-face {
+    font-family: gotblack;
+    src: url(https://cdn.discordapp.com/attachments/644631964774694942/738179761620123698/GOTHAM-BOLD.OTF);
+}
+
+@font-face {
+    font-family: bankgothic;
+    src: url('./bankgothic.ttf');
+}
+  
+#eqMb6uN1xaP2 {
+    font-family: bankgothic !important;
+
+}
+body {
+    background: transparent !important;
+    margin-top:80px;
+}
+
+.logo-animado{
+    position:relative;
+    top:0%;
+    left:0%;
+    
+    width:400px;
+    margin:0 auto;
+
+}
+.logo-animado svg{
+    margin-top:280px;
+    width:400px;
+
+}
+
+.appBanco{
+    display:none;
+}
+
+#bankingContainer {
+    background: #000000cc !important;
+    border-radius: 5px;
+    min-height:800px;
+    max-height:800px;
+    display:none;
+    box-shadow:0 0 10px #000;
+    animation: scale-in 0.3s ease-in-out forwards;
+}
+
+#ATMContainer {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 20px;
+    min-height:800px;
+    max-height:800px;
+    display:none;
+
+}
+
+.statement:hover {
+    background: rgba(150, 149, 149, 0.5) !important;
+}
+
+#v-pills-tabContent, #v-pills-tabContent-atm {
+    overflow-y: scroll;
+    min-height:100%;
+}
+
+#v-pills-tabContent::-webkit-scrollbar-track, #v-pills-tabContent-atm::-webkit-scrollbar-track {
+    background-color:transparent;
+    border: none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar-thumb, #v-pills-tabContent-atm::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border:none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar, #v-pills-tabContent-atm::-webkit-scrollbar {
+    width: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:transparent
+}
+
+.title {
+    color: white;
+    margin-bottom:20px;
+    font-family: bankgothic;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color:black;
+    color:white;
+}
+
+button, .btn{
+    transition:ease-in-out 0.3s;
+
+}
+
+button:hover, .btn:hover{
+    transform:scale(1.05);
+    transition:ease-in-out 0.3s;
+
+}
+.nav-pills, .btn, .card-header, #currentBalance, #currentCashBalance, #currentBalance1, #currentCashBalance1, #currentBalance2, #currentCashBalance2, #currentCoins{
+    font-family: bankgothic;
+
+}
+
+.active{
+    color:white !important;
+}
+
+.btn-dark{
+    background-color:black;
+}
+.btn-secondary{
+    background-color:rgb(54, 54, 54);
+}
+
+.card{
+    box-shadow: 0 0 10px white;
+}
+
+@keyframes scale-in{
+    0%{
+        transform:scale(0.8);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+@media(max-height:720px){
+    body{
+        margin-top:0px;
+        overflow:hidden;
+    }
+}

@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="scripting/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--
+    <link rel="stylesheet" href="https://assets.pixelworldrp.com/fonts/pro.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.6/fc-3.2.5/kt-2.5.0/r-2.2.2/datatables.min.css"/>-->
+
+    <title>Origen Company</title>
+</head>
+
+<body>
+    <audio src="nui://qb-multicharacter/html/over_button.ogg" id="over_button"></audio>
+    <audio src="nui://qb-multicharacter/html/click.ogg" id="click"></audio>
+    <audio src="cargado.ogg" id="cargado"></audio>
+    <audio src="bankon.ogg" id="bankon"></audio>
+    <div class="container" id="bankingContainer">
+
+        <div class="logo-animado">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="eqMb6uN1xaP1" viewBox="0 0 409.28 226.39" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><style>#eqMb6uN1xaP2 {animation: eqMb6uN1xaP2_c_o 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP2_c_o { 0% {opacity: 0;animation-timing-function: cubic-bezier(0.6,0.04,0.98,0.335)} 16.666667% {opacity: 1} 100% {opacity: 1}} #eqMb6uN1xaP4_to {animation: eqMb6uN1xaP4_to__to 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP4_to__to { 0% {transform: translate(-82.92px,-301.25px)} 9.666667% {transform: translate(-82.92px,-301.25px);animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 10% {transform: translate(-82.92px,-271.25px);animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 20% {transform: translate(-82.92px,-301.25px)} 100% {transform: translate(-82.92px,-301.25px)}} #eqMb6uN1xaP4 {animation: eqMb6uN1xaP4_c_o 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP4_c_o { 0% {opacity: 0} 10% {opacity: 0;animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 20% {opacity: 1} 100% {opacity: 1}} #eqMb6uN1xaP5_to {animation: eqMb6uN1xaP5_to__to 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP5_to__to { 0% {transform: translate(-82.92px,-301.25px)} 12.666667% {transform: translate(-82.92px,-301.25px);animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 13.333333% {transform: translate(-82.92px,-271.25px);animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 23.333333% {transform: translate(-82.92px,-301.25px)} 100% {transform: translate(-82.92px,-301.25px)}} #eqMb6uN1xaP5 {animation: eqMb6uN1xaP5_c_o 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP5_c_o { 0% {opacity: 0} 13.333333% {opacity: 0;animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 23.333333% {opacity: 1} 100% {opacity: 1}} #eqMb6uN1xaP6_to {animation: eqMb6uN1xaP6_to__to 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP6_to__to { 0% {transform: translate(-82.92px,-271.25px)} 18.666667% {transform: translate(-82.92px,-271.25px);animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 30% {transform: translate(-82.92px,-301.25px)} 100% {transform: translate(-82.92px,-301.25px)}} #eqMb6uN1xaP6 {animation: eqMb6uN1xaP6_c_o 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP6_c_o { 0% {opacity: 0} 18.666667% {opacity: 0;animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 30% {opacity: 1} 100% {opacity: 1}} #eqMb6uN1xaP7_to {animation: eqMb6uN1xaP7_to__to 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP7_to__to { 0% {transform: translate(-82.92px,-271.25px)} 23.333333% {transform: translate(-82.92px,-271.25px);animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 36.666667% {transform: translate(-82.92px,-301.25px)} 100% {transform: translate(-82.92px,-301.25px)}} #eqMb6uN1xaP7 {animation: eqMb6uN1xaP7_c_o 3000ms linear 1 normal forwards}@keyframes eqMb6uN1xaP7_c_o { 0% {opacity: 0} 23.333333% {opacity: 0;animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 36.666667% {opacity: 1} 100% {opacity: 1}}</style><g id="eqMb6uN1xaP4_to" transform="translate(-82.92,-301.25)"><path id="eqMb6uN1xaP4" d="M118.35,526.77C117.674919,526.167987,117.307496,525.29352,117.35,524.39L117.35,465.71C117.319074,464.838032,117.651202,463.992296,118.267215,463.374387C118.883229,462.756477,119.727941,462.421753,120.6,462.45L140.89,462.45C144.035969,462.404573,147.144533,463.136202,149.94,464.58C152.571602,465.932833,154.792105,467.966856,156.37,470.47C157.964214,472.989667,158.791135,475.918633,158.75,478.9C158.788942,481.724895,157.95804,484.493405,156.37,486.83C154.769713,489.177779,152.565578,491.050257,149.99,492.25C153.553423,493.136244,156.739144,495.1409,159.08,497.97C161.376605,500.934864,162.558751,504.61226,162.42,508.36C162.485902,511.867288,161.590182,515.325668,159.83,518.36C158.132838,521.25646,155.664396,523.624502,152.7,525.2C149.500754,526.887348,145.926326,527.737092,142.31,527.67L121,527.67C120.036293,527.704404,119.093431,527.384187,118.35,526.77ZM140.89,489.67C143.921252,489.793694,146.886854,488.764666,149.19,486.79C151.378102,484.76614,152.557221,481.876932,152.41,478.9C152.565829,476.037164,151.392493,473.262482,149.23,471.38C146.86289,469.513485,143.901003,468.565254,140.89,468.71L123.89,468.71L123.89,489.71ZM142.31,521.38C145.942148,521.534761,149.491056,520.264474,152.2,517.84C154.774063,515.375561,156.159185,511.920045,156,508.36C156.14614,504.927628,154.752741,501.60914,152.2,499.31C149.447905,496.975798,145.915054,495.768413,142.31,495.93L123.86,495.93L123.86,521.38Z" transform="translate(0,0)" opacity="0" fill="rgb(255,255,255)" stroke="none" stroke-width="1" stroke-miterlimit="1"></path></g><g id="eqMb6uN1xaP5_to" transform="translate(-82.92,-301.25)"><path id="eqMb6uN1xaP5" d="M263.18,524.39C263.152575,525.949486,262.040176,527.278222,260.509818,527.579474C258.979459,527.880725,257.446446,527.07274,256.83,525.64L251.24,512.12L218.93,512.12L213.34,525.64C212.949042,526.939854,211.690233,527.77906,210.34,527.64C209.464095,527.658496,208.623871,527.293181,208.04,526.64C207.462663,526.014495,207.147637,525.19113,207.16,524.34C207.147922,523.85381,207.23644,523.370369,207.42,522.92L232,464.71C232.430058,463.330856,233.726001,462.406935,235.17,462.45C236.598818,462.397721,237.876907,463.332505,238.26,464.71L262.88,523.05C263.094241,523.463192,263.197609,523.924902,263.18,524.39ZM221.27,506.53L249,506.53L235.15,473.05Z" transform="translate(0,0)" opacity="0" fill="rgb(255,255,255)" stroke="none" stroke-width="1" stroke-miterlimit="1"></path></g><g id="eqMb6uN1xaP6_to" transform="translate(-82.92,-271.25)"><path id="eqMb6uN1xaP6" d="M313.59,526.73C312.973882,526.110168,312.640992,525.263471,312.67,524.39L312.67,465.71C312.670955,464.339149,313.529409,463.115349,314.818053,462.647768C316.106697,462.180187,317.550186,462.568733,318.43,463.62L358.33,516L358.33,465.71C358.311776,464.822577,358.676053,463.970171,359.33,463.37C360.634389,462.145708,362.665611,462.145708,363.97,463.37C364.583481,463.990852,364.912848,464.837798,364.88,465.71L364.88,524.39C364.894968,525.247243,364.567441,526.075058,363.97,526.69C363.367557,527.340731,362.516669,527.704358,361.63,527.69C360.689447,527.767681,359.775118,527.355855,359.21,526.6L319.21,474.18L319.21,524.43C319.224968,525.287243,318.897441,526.115058,318.3,526.73C317.698308,527.381795,316.846919,527.745637,315.96,527.73C315.064179,527.746576,314.20318,527.383285,313.59,526.73Z" transform="translate(0,0)" opacity="0" fill="rgb(255,255,255)" stroke="none" stroke-width="1" stroke-miterlimit="1"></path></g><g id="eqMb6uN1xaP7_to" transform="translate(-82.92,-271.25)"><path id="eqMb6uN1xaP7" d="M422.57,526.69C421.931669,526.095513,421.569396,525.262285,421.57,524.39L421.57,465.71C421.503132,464.504049,422.108492,463.359958,423.143152,462.736848C424.177813,462.113737,425.472187,462.113737,426.506848,462.736848C427.541508,463.359958,428.146868,464.504049,428.08,465.71L428.08,494.09L458.54,463.62C459.207046,462.892277,460.143008,462.469467,461.13,462.45C461.928085,462.398276,462.710597,462.687856,463.282748,463.246657C463.854899,463.805458,464.162871,464.580917,464.13,465.38C464.127364,466.377815,463.736431,467.33542,463.04,468.05L440.17,490.92L463.29,522.47C463.696122,523.060818,463.928259,523.753765,463.96,524.47C463.96727,525.29642,463.651507,526.093005,463.08,526.69C462.55701,527.321761,461.780144,527.688207,460.96,527.69C459.85131,527.748709,458.796825,527.206184,458.2,526.27L435.5,495.55L428.12,503L428.12,524.37C428.131193,525.228467,427.800152,526.05607,427.2,526.67C426.586533,527.284935,425.753612,527.630525,424.885,527.630525C424.016388,527.630525,423.183467,527.284935,422.57,526.67Z" transform="translate(0,0)" opacity="0" fill="rgb(255,255,255)" stroke="none" stroke-width="1" stroke-miterlimit="1"></path></g></svg>
+        </div>
+        <div class="appBanco">
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="https://media.discordapp.net/attachments/921859099208085596/937450839633702922/pixlr-bg-result.png" class="img-fluid mt-5 mb-5">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="nav flex-column nav-pills p-2 shadow-lg" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background:rgb(255 255 255); border-radius: 5px;box-shadow:0 0 10px #fff !important;">
+                                    <a class="nav-link active m-1" id="bankingHome-tab" data-toggle="pill" href="#bankingHome" role="tab" aria-controls="bankingHome" aria-selected="true" style="color: black"><i class="fas fa-balance-scale-left"></i> Mi cuenta</a>
+                                    <a class="nav-link m-1" id="bankingWithdraw-tab" data-toggle="pill" href="#bankingWithdraw" role="tab" aria-controls="bankingWithdraw" aria-selected="false" style="color: black"><i class="fas fa-angle-double-left"></i> Retirar dinero</a>
+                                    <a class="nav-link m-1" id="bankingDeposit-tab" data-toggle="pill" href="#bankingDeposit" role="tab" aria-controls="bankingDeposit" aria-selected="false" style="color: black"><i class="fas fa-angle-double-right"></i> Depositar dinero</a>
+                                    <a class="nav-link m-1" id="bankingTransfer-tab" data-toggle="pill" href="#bankingTransfer" role="tab" aria-controls="bankingTransfer" aria-selected="false" style="color: black"><i class="fas fa-users"></i> Transferencia</a>
+                                    <!--<a class="nav-link m-1" id="bankingStatement-tab" data-toggle="pill" href="#bankingStatement" role="tab" aria-controls="bankingStatement" aria-selected="false">Statement</a>-->
+                                    <a class="nav-link m-1" id="bankingSavings-tab" style="display:none; color: rgb(0, 0, 0);" data-toggle="pill" href="#bankingSavings" role="tab" aria-controls="bankingSavings" aria-selected="false"><i class="fas fa-piggy-bank"></i> Cuenta de ahorros</a>
+                                    <a class="nav-link m-1" id="bankingActions-tab" data-toggle="pill" href="#bankingActions" role="tab" aria-controls="bankingActions" aria-selected="false" style="color: black"><i class="fas fa-bars"></i> Opciones de cuenta</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <div class="card mb-3" style="background:rgb(255, 255, 255); color: black;box-shadow:0 0 10px #fff !important;">
+                                    <div class="card-header">Información de la cuenta</div>
+                                    <div class="card-body">
+                                        <p class="card-text" style="color: rgb(0, 0, 0);"><small>
+                                        <i class="fas fa-user"></i> <span id="accountName" class="text-muted"></span><br>
+                                        <i class="fas fa-money-check-alt"></i> <span id="accountNumber" class="text-muted"></span><br>
+                                        <!--Account Sort Code: <span id="accountSortCode">-->
+
+                                        </span></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn btn-block" id="logoffbutton" style="background-color: rgb(255, 255, 255); color: black;box-shadow:0 0 10px #fff !important">Salir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <!-- Content Area -->
+                    <div class="tab-content p-2 shadow-lg" id="v-pills-tabContent" style="max-height:780px; min-height:780px;">
+                        <div class="tab-pane fade show active" id="bankingHome" role="tabpanel" aria-labelledby="bankingHome-tab" style="position: relative; top: 54px;">
+                            <div class="container-fluid p-2">
+                                <div class="row">
+                                    <div class="col-12 title">
+                                        <h3 style="font-size: 35px;">Bienvenid@, <span id="customerName"></span></h3>
+                                    </div>
+                                </div>
+                                <div class="row" id="successRow" style="display:none;">
+                                    <div class="col-12">
+                                        <div class="alert alert-success" role="alert" id="successMessage"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black; box-shadow:0 0 10px #fff !important;">
+                                            <div class="card-header"><i class="fas fa-money-bill-wave"></i> Saldo bancario actual:</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: black;" id="currentBalance"></h5>
+                                                <p class="card-text" style="color: rgb(0, 0, 0);">Total disponible</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black; box-shadow:0 0 10px #fff !important;">
+                                            <div class="card-header"><i class="fas fa-coins"></i> Saldo actual:</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: black;" id="currentCashBalance"></h5>
+                                                <p class="card-text" style="color: rgb(0, 0, 0);">Dinero en efectivo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black; box-shadow:0 0 10px #fff !important;">
+                                            <div class="card-header"><i class="fas fa-donate"></i> Origen Coins:</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: black;" id="currentCoins"></h5>
+                                                <p class="card-text" style="color: rgb(0, 0, 0);">Coins disponibles</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black; box-shadow:0 0 10px #fff !important;">
+                                            <div class="card-header" style="color: rgb(0, 0, 0)"><i class="fas fa-pencil-alt"></i> Opciones rápidas:</div>
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row m-1">
+                                                        <div class="col-4"><button class="btn btn-dark btn-block" data-action="deposit" data-amount="100">Depositar $100</button></div>
+                                                        <div class="col-4"><button class="btn btn-dark btn-block" data-action="deposit" data-amount="1000">Depositar $1,000</button></div>
+                                                        <div class="col-4"><button class="btn btn-dark btn-block" data-action="deposit" data-amount="10000">Depositar $10,000</button></div>
+                                                    </div>
+                                                    <div class="row m-1">
+                                                        <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="100">Retirar $100</button></div>
+                                                        <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="1000">Retirar $1,000</button></div>
+                                                        <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="10000">Retirar $10,000</button></div>
+                                                    </div>
+                                                    <div class="row m-1">
+                                                        <div class="col-6">
+                                                            <button class="btn btn-dark btn-block" id="savingsQuicky1" style="display:none;" data-action="savingsdeposit" data-amount="10000">Transferir $10,000 del Banco a la Caja de Ahorros</button>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <button class="btn btn-dark btn-block" id="savingsQuicky2" style="display:none;" data-action="savingswithdraw" data-amount="10000">Transferir $10,000 de la Caja de ahorros al banco</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bankingWithdraw" role="tabpanel" aria-labelledby="bankingWithdraw-tab">
+                            <div class="container-fluid p-2" style="position: relative; top: 54px;">
+                                <div class="row">
+                                    <div class="col-12 title">
+                                        <h3 style="font-size: 35px;">Retiradas</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" style="font-size: 12px; color: white;">
+                                        Retirar dinero de su cuenta bancaria. Para retirar dinero de su cuenta de ahorros, primero debe transferirlo.
+                                    </div>
+                                </div>
+                                <div class="row" style="position: relative; top: 20px;">
+                                    <div class="col-6">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black;box-shadow:0 0 10px #fff !important;">
+                                            <div class="card-header"><i class="fas fa-money-bill-wave"></i> Saldo bancario actual:</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: black;" id="currentBalance1"></h5>
+                                                <p class="card-text" style="color: rgb(0, 0, 0);">Disponible total para retirar/transferir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black;box-shadow:0 0 10px #fff !important;">
+                                            <div class="card-header"><i class="fas fa-coins"></i> Saldo actual:</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: black;" id="currentCashBalance1"></h5>
+                                                <p class="card-text" style="color: rgb(0, 0, 0);">Total disponible para depositar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="position: relative; top: 20px;">
+                                    <div class="col-12">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black;">
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row" id="withdrawError" style="display:none;">
+                                                        <div class="col-12">
+                                                            <div class="alert alert-danger" role="alert" id="withdrawErrorMsg">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-3 my-auto" style="font-size: 19px; color: rgb(0, 0, 0);"><label for="withdrawAmount"><small>Cantidad a retirar</small></label></div>
+                                                        <div class="col-9"><input type="number" placeholder="$" class="form-control" id="withdrawAmount" name="withdrawAmount"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="position: relative; top: 20px;">
+                                    <div class="col-12 text-center"><button class="btn" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: 0 0 10px white;" id="initiateWithdraw">Retirar todo</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bankingDeposit" role="tabpanel" aria-labelledby="bankingDeposit-tab">
+                            <div class="container-fluid p-2" style="position: relative; top: 54px;">
+                                <div class="row">
+                                    <div class="col-12 title">
+                                        <h3 style="font-size: 35px;">Depositos</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" style="font-size: 12px; color: white;">
+                                        Deposite dinero en su cuenta bancaria. Para depositar dinero en su cuenta de ahorros, simplemente transfiéralo desde su banco después de su depósito inicial.
+                                    </div>
+                                </div>
+                                <div class="row" style="position: relative; top: 20px;">
+                                    <div class="col-6">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black;box-shadow:0 0 10px white;">
+                                            <div class="card-header"><i class="fas fa-money-bill-wave"></i> Saldo bancario actual</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: black;" id="currentBalance2"></h5>
+                                                <p class="card-text" style="color: rgb(0, 0, 0);">Total disponible para retirar/transferir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black;box-shadow:0 0 10px white;">
+                                            <div class="card-header"><i class="fas fa-coins"></i> Saldo actual:</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: black;" id="currentCashBalance2"></h5>
+                                                <p class="card-text" style="color: rgb(0, 0, 0);">Total disponible para depositar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="position: relative; top: 20px;">
+                                    <div class="col-12">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black;box-shadow:0 0 10px white;">
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row" id="depositError" style="display:none;">
+                                                        <div class="col-12">
+                                                            <div class="alert alert-danger" role="alert" id="depositErrorMsg">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-3 my-auto" style="font-size: 19px; color: rgb(0, 0, 0);"><label for="depositAmount"><small>Disponible para depositar:</small></label></div>
+                                                        <div class="col-9"><input type="number" placeholder="$" class="form-control" id="depositAmount" name="depositAmount"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="position: relative; top: 20px;">
+                                    <div class="col-12 text-center"><button class="btn" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);box-shadow:0 0 10px #fff !important;" id="initiateDeposit">Completar</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bankingTransfer" role="tabpanel" aria-labelledby="bankingTransfer-tab">
+
+                            <div class="container-fluid p-2" style="position: relative; top: 54px;">
+                                <div class="row">
+                                    <div class="col-12 title">
+                                        <h3 style="font-size: 35px;">Transferencias</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" style="font-size: 12px; color:white">Transfiera dinero a otra cuenta simplemente ingresando el número dedicado de esa cuenta y la cantidad a transferir.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" style="position: relative; top: 20px;">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black;box-shadow:0 0 10px white;">
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row" id="transferError" style="display:none;">
+                                                        <div class="col-12">
+                                                            <div class="alert alert-danger" role="alert" id="transferErrorMsg">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <!-- form -->
+                                                            <div class="container-fluid">
+                                                                <div class="row m-1">
+                                                                    <div class="col-3 my-auto" style="font-size: 19px; color: rgb(0, 0, 0);"><label for="transferAcctNo"><small>Numero de cuenta:</small></label></div>
+                                                                    <div class="col-9"><input type="text" id="transferAcctNo" name="transferAcctNo" class="form-control" maxlength="8"></div>
+                                                                </div>
+                                                                <div class="row m-1">
+                                                                    <div class="col-3 my-auto" style="font-size: 19px; color: rgb(0, 0, 0);"><label for="transferAmount"><small>Cantidad a transferir:</small></label></div>
+                                                                    <div class="col-9"><input type="number" id="transferAmount" name="transferAmount" class="form-control" placeholder="$"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-center" style="position: relative; top: 20px;">
+                                        <button class="btn" id="initiateTransfer" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);box-shadow:0 0 10px #fff !important;">Completar trasferencia</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bankingStatement" role="tabpanel" aria-labelledby="bankingStatement-tab">
+                            <div class="container-fluid p-2">
+                                <div class="row">
+                                    <div class="col-12 title">
+                                        <h3>Estado de cuenta corriente</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card bg-light mb-3">
+                                            <div class="card-body">
+                                                <table id="currentStatement" class="display" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th>Description</th>
+                                                            <th class="text-center">Retirar</th>
+                                                            <th class="text-center">Depositar</th>
+                                                            <th class="text-center">Nuevo Balance</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="currentStatementContents">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bankingSavings" role="tabpanel" aria-labelledby="bankingSavings-tab">
+                            <div class="container-fluid p-2" style="position: relative; top: 54px;">
+                                <div class="row">
+                                    <div class="col-12 title">
+                                        <h4 style="font-size: 35px;">Guardar cuenta</h4>
+                                    </div>
+                                </div>
+                                <div class="row" style="position: relative; top: 20px;">
+                                    <div class="col-4" style="color: #00af17">
+                                        <div class="card mb-3" style="background:white; color: rgb(0, 0, 0); min-height:150px">
+                                            <div class="card-header"><i class="fas fa-money-bill-wave"></i> Balance de ahorros: </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">$<span id="savingsBalance"></span></h5>
+                                                <p class="card-text" style="font-size: 10px; color: rgb(0, 0, 0);">Esto es lo que actualmente ha ahorrado en su cuenta de ahorros.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="card mb-3" style="background:rgba(255, 255, 255); color: rgb(0, 0, 0);">
+                                            <div class="card-header">Retiro de ahorros y depositos</div>
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-4"><label for="savingsAction"><small>Accion</small></label>
+                                                            <select name="savingsAction" id="savingsAction" class="form-control" style="font-size: 13px;">
+                                                        <option selected disabled value="def">Selecciona</option>
+                                                        <option value="deposit">Deposita</option>
+                                                        <option value="withdraw">Retirar</option>
+                                                    </select>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label for="savingsTAmount"><small>Requerido</small></label>
+                                                            <input type="number" id="savingsTAmount" name="savingsTAmount" class="form-control" placeholder="$" style="font-size: 13px;">
+                                                        </div>
+                                                        <div class="col-4 my-auto">
+                                                            <button class="btn btn-block" id="makeSavingsTransfer" style="background-color: black; font-size: 12px; color: white">Completar solicitud</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: relative; top: 60px">
+                                <div class="card m-3" style="background:white; color: rgb(0, 0, 0); ">
+                                    <div class="card-header">Estado de cuenta de ahorros</div>
+                                    <div class="card-body">
+                                        <table id="savingsStatement" class="display" style="width:100%">
+                                            <thead>
+                                                <tr style="font-size: 14px; color: rgb(0, 0, 0);">
+                                                    <th>Fecha</th>
+                                                    <th>Descripcion</th>
+                                                    <th class="text-center">Retirada</th>
+                                                    <th class="text-center">Deposito</th>
+                                                    <th class="text-center">Nuevo balance</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="savingsStatementContents" style="font-size: 14px;">
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bankingActions" role="tabpanel" aria-labelledby="bankingActions-tab" style="position: relative; top: 54px;">
+                            <div class="container-fluid p-2">
+                                <div class="row">
+                                    <div class="col-12 title">
+                                        <h3 style="font-size: 35px;">Opciones de cuenta</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 content" style="font-size: 12px;">
+                                        <p>Desde la sección Opciones de cuenta, puede administrar todos los aspectos de su experiencia bancaria con Oringen Co. Banks, desde solicitar una nueva tarjeta de débito, cambiar sus pines e incluso crear una cuenta
+                                            de ahorros.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card mb-3" style="background:white; color:black; box-shadow:0 0 10px #fff !important;">
+                                            <div class="card-header" style="color: rgb(0, 0, 0)">Opciones de tarjeta de debito</div>
+                                            <div class="card-body">
+                                                <!-- Card In-Active Container -->
+                                                <div class="container-fluid" id="cardInactive" style="display:none;">
+                                                    <div class="row">
+                                                        <div class="col-12 content" style="font-size: 16px; color:black;">
+                                                            <p>Puede solicitar una tarjeta de débito para poder utilizar los cajeros automáticos y las funciones de pago con tarjeta que Origen Co. ofrece de forma gratuita..</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <button class="btn btn-block" id="orderCardBtn" style="background:rgb(0, 0, 0); color: white;">Solicitar tarjeta de debito</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Order Card Screen -->
+                                                <div class="container-fluid" id="cardOrdering" style="display:none;">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <p>Para solicitar una nueva tarjeta de débito, primero debe establecer un número de identificación personal (PIN) que le permite usar su tarjeta en los cajeros automáticos.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" id="pinCreatorError" style="display:none;">
+                                                        <div class="col-12">
+                                                            <div class="alert alert-warning" role="alert" id="pinCreatorErrorMsg">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 my-auto">
+                                                            <label for="cardPinNumber"><small>Pin personal</small></label>
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <input type="number" maxlength="4" id="cardPinNumber" name="cardPinNumber" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-12 text-center "><button class="btn btn-dark" id="processCard">Pedido de tarjeta</button></div>
+                                                    </div>
+                                                </div>
+                                                <!-- Card Active Container -->
+                                                <div class="container-fluid" id="cardDetails" style="display:none;">
+                                                    <div class="row">
+
+                                                        <div class="col-4">
+                                                            <div class="card text-white bg-info mb-3" id="debitCardPin" style="min-height:230px">
+                                                                <div class="card-header">Cambiar pin</div>
+                                                                <div class="card-body">Tu pin ya esta configurado.</div>
+                                                                <div class="card-footer">
+                                                                    <button class="btn btn-primary btn-block" id="changePin">Cambiar pin</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-4">
+                                                            <div class="card text-white bg-dark mb-3" id="requestNewCard1" style="min-height:230px; display:block;">
+                                                                <div class="card-header">Solicitar tarjeta nueva</div>
+                                                                <div class="card-body">Tarjeta activa actual<br>
+                                                                    <small><span id="cardType">Visa</span><br>
+                                                                        <span id="cardNumberShow">************3455</span></small>
+                                                                </div>
+                                                                <div class="card-footer">
+                                                                    <button class="btn btn-primary btn-block" id="makeNewCardRequestBtn1">Hacer pedido</button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card text-white bg-dark mb-3" id="requestNewCard2" style="min-height:230px; display:none;">
+                                                                <div class="card-header">Confirmar</div>
+                                                                <div class="card-body"><small>Al realizar esta solicitud, se bloqueará su tarjeta anterior.</small>
+
+                                                                </div>
+                                                                <div class="card-footer text-center">
+                                                                    <button class="btn btn-success btn-sm" id="confirmCardRequest">Confirm</button> <button class="btn btn-danger btn-sm" id="cancelNewCardReq">Cancelar</button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card text-white bg-success mb-3" id="requestNewCard3" style="min-height:230px; display:none;">
+                                                                <div class="card-header">Confirmar</div>
+                                                                <div class="card-body"><small>Ha recibido una nueva tarjeta y la anterior ha sido bloqueada.</small>
+
+                                                                </div>
+                                                                <div class="card-footer text-center">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-4">
+                                                            <div class="card text-white bg-success mb-3" id="debitCardStatus" style="min-height:230px">
+                                                                <div class="card-header">Tarjeta desbloqueada</div>
+                                                                <div class="card-body">Tu tarjeta esta activa.</div>
+                                                                <div class="card-footer">
+                                                                    <button class="btn btn-primary btn-block" id="lockCard">Bloquear tarjeta</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" id="createNewPin" style="display:none;">
+                                                        <div class="col-12">
+                                                            <div class="card bg-light mb-3">
+                                                                <div class="card-header">Crear nuevo pin</div>
+                                                                <div class="card-body">
+                                                                    <div class="container-fluid">
+                                                                        <div class="row" id="newPinReqMsgDiv" style="display:none;">
+                                                                            <div class="col-12">
+                                                                                <div class="alert alert-danger" role="alert" id="newPinReqMsg">
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-3 my-aut"><label for="newPinNumber"><small>Nuevo numero pin</small></label></div>
+                                                                            <div class="col-9"><input type="number" class="form-control" id="newPinNumber" name="newPinNumber"></div>
+                                                                        </div>
+                                                                        <div class="row mt-2">
+                                                                            <div class="col-12 text-center"><button class="btn btn-success" id="updateNewPin">Actualizar pin</button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="savingAccountCreator" style="display:none;">
+                                    <div class="col-12">
+                                        <div class="card mb-3" style="background: rgb(255 255 255);color: black; box-shadow: 0 0 10x white;">
+                                            <div class="card-header" style="color:black;">Guardar cambios </div>
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-12 content" style="font-size: 16px;color:black;">
+                                                            <p>Aún no ha abierto una cuenta de ahorros con Origen Co Banks, haga clic en el botón de abajo para abrir una cuenta de ahorros personal, con un número de cuenta y un código de clasificación separados</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <button class="btn btn-block mt-2" style="background:rgb(0, 0, 0); color: white;" id="openSavings">Abrir cuenta de ahorros</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p class="card-text"><small>Esta sección le permite administrar fácilmente su cuenta de ahorros.</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripting/external/jquery/jquery.js"></script>
+    <script src="scripting/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.6/fc-3.2.5/kt-2.5.0/r-2.2.2/datatables.min.js"></script>
+    <script src="qb-banking.js"></script>
+</body>
+
+</html>

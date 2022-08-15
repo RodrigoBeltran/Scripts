@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+@font-face {
+    font-family: bankgothic;
+    src: url('./bankgothic.ttf');
+}
+
+.shake {
+    /*animation-name:shake-slow;animation-duration:20s;animation-timing-function:ease-in-out;animation-iteration-count:infinite;overflow:hidden;*/
+    width: 300px;
+    height: 100%;
+    overflow: visible;
+}
+
+.titulo {
+    border-bottom: 1px solid white;
+    text-shadow: 0 0 10px black;
+    width: 100%;
+    padding-bottom: 4px;
+    position: absolute;
+    top: -32px;
+    left: 0px;
+    font-family: bankgothic;
+    font-size: 15px;
+    color: white;
+}
+
+.shake-help {
+    right: 20px;
+    top: 110px;
+    position: absolute;
+    overflow: visible !important;
+}
+
+.icono {
+    width: 29px;
+    float: left;
+    height: 100%;
+    animation: zoom 1s cubic-bezier(0.000, 0.445, 0.240, 1.365) infinite;
+}
+
+.inclinacion {
+    padding: 10px;
+    position: fixed;
+    bottom: 5px;
+    right: 32px;
+    width: 300px;
+    overflow: visible !important;
+    height: 100%;
+}
+
+#noty_layout__bottomRight {
+    margin: 0;
+    padding: 0;
+    z-index: 9999999;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    max-width: 230px;
+}
+
+.noty_theme__origen.noty_bar {
+    margin: 7px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    overflow: visible;
+    margin-top: 40px;
+    /*border: 2px solid black;*/
+}
+
+.noty_theme__origen.noty_bar .noty_body {
+    padding: 2px;
+    padding-top: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.87em;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.noty_theme__origen.noty_bar .noty_buttons {
+    padding: 10px;
+}
+
+.noty_theme__origen.noty_type__alert,
+.noty_theme__origen.noty_type__notification {
+    /*background-image:url("https://i.imgur.com/Q9HzFKZ.gif");*/
+    color: #fff;
+    box-shadow: 0 0 20px #000;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.noty_theme__origen.noty_type__disparos {
+    background-color: rgba(0, 0, 0, 0.795);
+    color: #fff;
+    box-shadow: 0 0 8px #000;
+}
+
+.noty_theme__origen.noty_type__alert .noty_progressbar,
+.noty_theme__origen.noty_type__notification .noty_progressbar {
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://i.imgur.com/Q9HzFKZ.gif");
+    z-index: -9999999;
+    border-radius: 5px;
+}
+
+.noty_theme__origen.noty_type__warning {
+    background-color: #ffd166;
+    color: #fff;
+}
+
+@font-face {
+    font-family: bankgothic;
+    src: url('bankgothic.ttf');
+}
+
+.noty_theme__origen.noty_type__error {
+    background-color: #ef476f;
+    color: #fff;
+}
+
+.noty_theme__origen.noty_type__error .noty_progressbar {
+    opacity: 0.4;
+}
+
+.noty_theme__origen.noty_type__info,
+.noty_theme__origen.noty_type__information {
+    background-color: #118ab2;
+    color: #fff;
+}
+
+.noty_theme__origen.noty_type__info .noty_progressbar,
+.noty_theme__origen.noty_type__information .noty_progressbar {
+    opacity: 1.0;
+}
+
+.noty_theme__origen.noty_type__success {
+    background-color: #06d6a0;
+    color: #fff;
+}
+
+#helpbar {
+    font-family: bankgothic;
+    background-image: url(https://i.imgur.com/Q9HzFKZ.gif);
+    /* transform: translate(-50%, -50%); */
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    /* background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); */
+    padding: 5px 5px 7px 5px;
+}
+
+#helpText {
+    font-family: bankgothic;
+    font-size: 13px;
+    color: #ffffffcc;
+    text-align: left;
+    max-width: 150px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.icono img {
+    width: 15px;
+    margin-left: 5px;
+}
+
+.noty_body img {
+    animation: brillo ease-in-out 1.5s infinite;
+}
+
+.mensaje {
+    /*border-left: 1px solid #ffffff8c;*/
+    height: fit-content;
+    margin-right: 10px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+}
+
+.glitch {
+    /* Animation provies a slight random skew. Check bottom of doc
+  for more information on how to random skew. */
+}
+
+.help-in {
+    animation: help-in ease-in-out 0.3s forwards;
+}
+
+.help-out {
+    animation: help-out ease-in-out 0.3s forwards;
+}
+
+
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+
+@keyframes brillo {
+    0% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(2);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes shake-slow {
+    0% {
+        transform: translate(0, 0) rotate(0)
+    }
+    15% {
+        transform: translate(4px, 2px) rotate(-.1deg)
+    }
+    30% {
+        transform: translate(3px, -5px) rotate(0.5deg)
+    }
+    50% {
+        transform: translate(4px, -3px) rotate(-.5deg)
+    }
+    70% {
+        transform: translate(-3px, 3px) rotate(1.2deg)
+    }
+    85% {
+        transform: translate(-3px, 3px) rotate(1.2deg)
+    }
+    100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+@keyframes help-in {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 100;
+        transform: translateX(0);
+    }
+}
+
+@keyframes help-out {
+    0% {
+        opacity: 100;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

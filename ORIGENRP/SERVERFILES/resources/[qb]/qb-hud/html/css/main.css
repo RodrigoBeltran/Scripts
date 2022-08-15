@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@font-face {
+    font-family: 'pricedownblack';
+    src: url('pricedown_bl-webfont.woff2') format('woff2'), url('pricedown_bl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gta-ui';
+    src: url('gta-ui.ttf');
+}
+
+@font-face {
+    font-family: 'pdown';
+    src: url('pdown.ttf');
+}
+
+@font-face {
+    font-family: bankgothic;
+    src: url('./bankgothic.ttf');
+}
+
+html {
+    overflow: hidden;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.mini-logo {
+    position: fixed;
+    width: auto;
+    top: 20px;
+    right: 20px;
+    opacity: 0.8;
+    width: 85px;
+}
+
+.mini-logo img {
+    width: 100%;
+}
+
+.zona-muerte {
+    display: none;
+    width: 432px;
+    font-family: bankgothic;
+    background-color: black;
+    box-shadow: 0 0 10px #000;
+    border-radius: 5px;
+    padding: 5px 0;
+    background-image: url('https://i.imgur.com/52oOvto.gif');
+    color: white;
+    animation: scale-in ease-in-out 0.3s;
+    position: absolute;
+    bottom: 30px;
+    left: 38.6%;
+    text-align: center;
+}
+
+.titulo {
+    border-bottom: 1px solid white;
+    text-shadow: 0 0 10px black;
+    width: 100%;
+    padding-bottom: 4px;
+    position: absolute;
+    top: -32px;
+    left: 0px;
+    font-family: bankgothic;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+.titulo-entorno {
+    border-bottom: 1px solid white;
+    text-shadow: 0 0 10px black;
+    width: 100%;
+    padding-bottom: 9px;
+    position: absolute;
+    top: -52px;
+    left: 0px;
+    font-family: bankgothic;
+    text-align: left;
+    font-size: 21px;
+    color: white;
+}
+
+.zona-repostar {
+    display: none;
+    width: max-content;
+    font-family: bankgothic;
+    background-color: black;
+    box-shadow: 0 0 10px #000;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    background-image: url(https://i.imgur.com/52oOvto.gif);
+    color: #ffffffcc;
+    /* animation: scale-in ease-in-out 0.3s; */
+    position: absolute;
+    top: 180px;
+    text-align: left;
+    right: 20px;
+    font-size: 13px;
+}
+
+.zona-entorno {
+    display: none;
+    width: 270px;
+    font-family: bankgothic;
+    background-color: black;
+    box-shadow: 0 0 10px #000;
+    border-radius: 5px;
+    padding: 1vh;
+    background-image: url(https://i.imgur.com/52oOvto.gif);
+    color: #ffffffcc;
+    animation: scale-in ease-in-out 0.3s;
+    position: absolute;
+    top: 35vh;
+    text-align: left;
+    left: 3vh;
+    font-size: 13px;
+    text-align: center;
+}
+
+.scale-out {
+    animation: scale-out ease-in-out 0.3s;
+}
+
+
+/* .zona-repostar .coste {
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: black;
+} */
+
+.basic-info {
+    position: fixed;
+    bottom: 37px;
+    right: 3px;
+    width: 47px;
+    max-height: 500px;
+    border-radius: 3px;
+    min-height: 57px;
+}
+
+.contenedor {
+    position: absolute;
+    bottom: 0px;
+    width: 43px;
+}
+
+.contenedor div {
+    margin-bottom: 7px;
+    margin-right: 7px;
+}
+
+.cuadro-estado {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: black;
+    box-shadow: rgb(0 0 0 / 60%) 0px 0px 8px 3px;
+    transition: ease-in-out 0.3s;
+}
+
+#vida::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#armadura::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#hambre::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#sed::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#estress::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.money-container {
+    position: absolute;
+    right: 5vw;
+    top: 7vh;
+}
+
+#cash {
+    color: white;
+}
+
+.escuchando {
+    width: 24px;
+    margin-left: -5px;
+}
+
+.texto-entorno {
+    color: white !important;
+}
+
+.loading {
+    text-align: center;
+}
+
+.loading img {
+    width: 30px;
+}
+
+.boton {
+    background-color: black;
+    padding: 0px 8px 5px 8px;
+    color: white;
+    border-radius: 5px;
+    width: min-content;
+    float: left;
+    font-weight: bold;
+}
+
+.botones-confirmacion {
+    width: 100%;
+}
+
+.btn {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.76);
+    color: black;
+    padding: .3vh !important;
+    font-size: 1.3vh !important;
+}
+
+.btn-left {
+    float: left;
+    width: 48%;
+}
+
+.btn-right {
+    float: right;
+    width: 48%;
+}
+
+.money-cash,
+.money-bank {
+    display: none;
+    float: right;
+    font-family: 'pdown';
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+    padding: 4px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 0;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 0;
+}
+
+.money-cash {
+    color: rgb(210, 210, 210);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+}
+
+.money-bank {
+    color: rgb(167, 167, 167);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    top: 55px;
+}
+
+#plus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #F0F0F0;
+}
+
+#minus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #F0F0F0;
+}
+
+.minus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #801E1F;
+}
+
+.munnie {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #277418;
+}
+
+.moneyupdate {
+    float: right;
+    padding-left: 0.5vw;
+}
+
+.plus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #277418;
+}
+
+
+/* Player Hud Styling */
+
+.ui-container {
+    display: none;
+    font-size: 40px;
+    overflow: hidden;
+    font-family: 'Quicksand';
+}
+
+.health {
+    position: relative;
+    width: 24px;
+    left: 8px;
+    animation: 0.5s scale-in ease-in-out forwards;
+    transition: ease-in-out 0.3s;
+}
+
+#health-icon {
+    position: absolute;
+    left: 8px;
+    bottom: 7px;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+}
+
+.armor {
+    position: relative;
+    width: 24px;
+    animation: 0.5s scale-in ease-in-out forwards;
+    left: 8px;
+    transition: ease-in-out 0.3s;
+}
+
+#armor-icon {
+    position: absolute;
+    left: 8px;
+    bottom: 7px;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+}
+
+.hunger {
+    position: relative;
+    width: 24px;
+    left: 8px;
+    animation: 0.5s scale-in ease-in-out forwards;
+    transition: ease-in-out 0.3s;
+}
+
+#hunger-icon {
+    position: absolute;
+    left: 8px;
+    bottom: 7px;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+}
+
+.thirst {
+    position: relative;
+    width: 24px;
+    left: 8px;
+    animation: 0.5s scale-in ease-in-out forwards;
+    transition: ease-in-out 0.3s;
+}
+
+#thirst-icon {
+    position: absolute;
+    left: 11px;
+    bottom: 7px;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+}
+
+.stress {
+    position: relative;
+    width: 24px;
+    left: 8px;
+    animation: 0.5s scale-in ease-in-out forwards;
+    transition: ease-in-out 0.3s;
+}
+
+#stress-icon {
+    position: absolute;
+    left: 8px;
+    bottom: 9px;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+}
+
+.police {
+    position: relative;
+    width: 24px;
+    left: 8px;
+    animation: 0.5s scale-in ease-in-out forwards;
+    transition: ease-in-out 0.3s;
+}
+
+#police-icon {
+    position: absolute;
+    left: 8px;
+    bottom: 9px;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+}
+
+.thirst img,
+.hunger img,
+.armor img .stress img,
+.police img {
+    top: 4px !important;
+    ;
+}
+
+.voice {
+    position: relative;
+    width: 25px;
+    left: 8px;
+}
+
+#voice-icon {
+    position: absolute;
+    left: 7px;
+    bottom: 6px;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+}
+
+.oxygen {
+    left: 11.09vw;
+}
+
+.progress {
+    -webkit-transition: 0.35s stroke-dashoffset;
+    -o-transition: 0.35s stroke-dashoffset;
+    transition: 0.35s stroke-dashoffset;
+    -webkit-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    transform: rotate(140deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+
+/* Carhud Styling */
+
+.ui-car-container {
+    display: none;
+    width: 108px;
+    height: 64px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 10px #000;
+    position: fixed;
+    bottom: 46px;
+    left: 325px;
+    padding: 0 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.ui-car-speed,
+.ui-car-fuel,
+.ui-car-nos {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.ui-car-speed {
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 26px;
+}
+
+.speed-type {
+    position: relative;
+    left: 0.3vw;
+    bottom: 23px;
+    font-size: 10px;
+    text-align: right;
+}
+
+.ui-car-fuel {
+    width: 33.33%;
+    float: left;
+}
+
+.fuel-label {
+    font-size: 10px;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.548), 1px 1px 2px rgba(0, 0, 0, 0.548), 1px -1px 0 rgba(0, 0, 0, 0.548), -1px -1px 0 rgba(0, 0, 0, 0.548);
+}
+
+.fuel-text {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.speed-text {
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 21px;
+}
+
+.ui-car-nos {
+    left: 23.7vw;
+}
+
+.icon {
+    width: 15px;
+}
+
+.rpm {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.rpm .zona-izq {
+    width: 50%;
+    float: left;
+    height: 5px;
+    margin-top: 4px;
+}
+
+.rpm .zona-der {
+    width: 50%;
+    float: right;
+    height: 5px;
+    margin-top: 4px;
+}
+
+.rpm .barra-izq {
+    width: 0%;
+    background-color: white;
+    height: 3px;
+    float: right;
+    border-radius: 3px 0 0 3px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.712);
+    transition: all 0s ease-in-out;
+}
+
+.rpm .barra-der {
+    width: 0%;
+    background-color: white;
+    height: 3px;
+    float: left;
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.712);
+    transition: all 0s ease-in-out;
+}
+
+.nos-label {
+    position: relative;
+    left: 1.9vw;
+    bottom: 0.8vh;
+    font-size: 10px;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.548), 1px 1px 2px rgba(0, 0, 0, 0.548), 1px -1px 0 rgba(0, 0, 0, 0.548), -1px -1px 0 rgba(0, 0, 0, 0.548);
+}
+
+.nos-text {
+    height: 12px;
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 18px;
+}
+
+.ui-car-street {
+    display: none;
+}
+
+.sep {
+    color: rgba(232, 185, 14, 1.0);
+}
+
+.sin-cinturon {
+    animation: sin-cinturon ease-in-out 1s infinite;
+}
+
+.ui-car-seatbelt {
+    width: 33.33%;
+    float: left;
+}
+
+.ui-car-seatbelt .icon {
+    margin-top: 6px;
+    margin-left: 7px;
+}
+
+.ui-car-cruise {
+    width: 33.33%;
+    float: left;
+}
+
+.ui-car-cruise .icon {
+    float: right;
+    margin-top: 6px;
+    width: 19px;
+    transition: ease-in-out 0.3s;
+}
+
+.hablando {
+    animation: anim-hablar 1s ease-in-out infinite;
+}
+
+.rango {
+    opacity: 0;
+    height: 25px;
+    position: fixed;
+    bottom: 36px;
+    right: 45px;
+    font-size: 0.35em;
+    border-radius: 3px;
+    padding: 1px 10px 10px 10px;
+    background-color: black;
+    box-shadow: 0 0 8px #000;
+    font-family: bankgothic;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.icono {
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    z-index: 999;
+    width: 16px;
+}
+
+.icono-radio{
+    float: left;
+    margin-right: 5px;
+    margin-left: -5px;
+    margin-top: 1px;
+}
+
+@keyframes anim-hablar {
+    0% {
+        box-shadow: 0 0 0px 1px #ffffff9e
+    }
+    50% {
+        box-shadow: 0 0 0px 3px #ffffff9e;
+    }
+    100% {
+        box-shadow: 0 0 0px 1px #ffffff9e
+    }
+}
+
+@keyframes sin-cinturon {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes anim-vida {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-in {
+    0% {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(1)
+    }
+}
+
+@keyframes scale-out {
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+}
+
+@keyframes limite {
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}

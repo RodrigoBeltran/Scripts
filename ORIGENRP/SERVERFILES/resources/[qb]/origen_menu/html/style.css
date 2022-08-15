@@ -1,0 +1,255 @@
+@font-face {
+    font-family: bankgothic;
+    src: url('./bankgothic.ttf');
+}
+
+body {
+    user-select: none;
+}
+
+body {
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+    font-family: bankgothic;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+@keyframes hexShow {
+    from {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+}
+
+.custom {
+    left: 49.5vw;
+    top: 60%;
+    padding-left: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1vh;
+    padding-top: 1vh;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px #000;
+    animation: hexShow 0.3s ease-in-out forwards;
+    transform: scale(1);
+    transition: ease-in-out 0.3s;
+    width: 55px;
+    height: 50px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 28%;
+    right: 10px;
+    color: white;
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 5px;
+    /*animation:scale-in 0.3s ease-in-out forwards;*/
+}
+
+.zona-2 {
+    position: absolute;
+    top: 0;
+    right: 83px;
+}
+
+.out {
+    animation: hexShow 0.3s ease-in-out forwards;
+}
+
+.custom:hover {
+    background-color: #ffffff;
+    transition: ease-in-out 0.3s;
+    /*transform:scale(1.03) !important;*/
+    color: rgb(0, 0, 0);
+}
+
+.close {
+    top: .208333333in;
+    right: 0;
+}
+
+@keyframes scale-in {
+    0% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
+
+
+/*
+[class~=custom]:hover {
+    background-color: #df7676;
+}
+[class~=menu] {
+    display: none;
+}
+[class~=menu] {
+    position: absolute;
+}
+[class~=custom]:hover {
+    line-height: 2;
+}
+[class~=menu] {
+    top: 24%;
+}
+[class~=menu] {
+    left: 18%;
+}
+[class~=custom]:hover {
+    color: #fff;
+}
+[class~=custom]:hover {
+    transform-origin: 0 0;
+}
+[class~=custom]:hover {
+    transform: rotate(45deg);
+}
+[class~=custom]:hover {
+    -webkit-transition: transform .5s ease-in-out;
+}
+[class~=custom]:hover {
+    -o-transition: transform .5s ease-in-out;
+}
+[class~=menu] {
+    color: white;
+}
+*/
+
+#label-3,
+#label-2,
+#label-4,
+#label-1,
+#label-6,
+#label-7,
+#label-8,
+#label-9,
+#label-10,
+#label-11,
+#label-close,
+#label-5 {
+    font-size: 11px;
+    max-width: 70px;
+}
+
+
+/*
+[class~=menu] {
+    transform: scale(1.2);
+}
+[class~=menu] {
+    animation: hexShow 1s;
+}
+[class~=menu] {
+    background-color: rgba(61, 59, 59, .4);
+}
+[class~=custom]:hover {
+    transition: transform .5s ease-in-out;
+}
+[class~=custom] {
+    left: 49.5vw;
+}
+[class~=custom] {
+    top: 60%;
+}
+[class~=custom] {
+    width: 2vw;
+}
+[class~=custom] {
+    padding-left: 1vh;
+}
+[class~=custom] {
+    padding-bottom: 1vh;
+}
+[class~=custom] {
+    padding-right: 1vh;
+}
+[class~=custom] {
+    padding-top: 1vh;
+}
+[class~=close] {
+    top: .208333333in;
+}
+[class~=close] {
+    left: 330px;
+}*/
+
+
+/* DNI by Chaini */
+
+.card {
+    position: absolute;
+    top: 98px;
+    right: 124px;
+    min-width: 300px;
+    height: 190px;
+    width: fit-content;
+    background: black;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 10px black;
+    text-align: left !important;
+    border: 1px solid #ffffff57
+}
+
+.card-photo {
+    height: 80px;
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5%;
+    border: 1px solid #ffffff40;
+}
+
+.card h3 {
+    background-color: white;
+    color: black;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card span {
+    font-family: bankgothic;
+    font-size: 15px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.texto-identidad {
+    width: 93%;
+    position: absolute;
+    bottom: 7px;
+    margin: 0;
+}
+
+.texto-identidad span {
+    font-size: 12px !important;
+}

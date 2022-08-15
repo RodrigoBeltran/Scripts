@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>rp-radio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+
+<body>
+  <audio id="audio_on" src="sounds/on.ogg"></audio>
+  <audio id="audio_off" src="sounds/off.ogg"></audio>
+
+  <img id="radio" src="img/radio.png" class="radio" style="display: none">
+  <div id="radio-on" class="container title" style="display: none">
+    <span>FRECUENCIA<br /> <a id="actual-freq">1</a>
+      <div style="font-size: 30px;">Mhz</div>
+    </span>
+    <span style="padding-top: 10px">
+      <div class="key">&#8679;</div> + <div class="key">Y</div> para ocultar
+    </span>
+    <span>
+      <div class="key">E</div> para apagar
+    </span>
+    <span>
+      <div class="key text-key">Alt</div>
+      para hablar
+    </span>
+  </div>
+
+  <div id="radio-off" class="container title" style="display: none">
+    <span>FRECUENCIA<br /> <a id="actual-freq">1</a>
+      <div style="font-size: 30px;">Mhz</div>
+    </span>
+    <span style="padding-top: 10px">
+      <div class="key">&#8679;</div> + <div class="key">Y</div> para ocultar
+    </span>
+    <span>
+      <div class="key">E</div> para encender
+    </span>
+    <span>
+      <div class="key">&larr;</div>
+      para reducir canal
+    </span>
+    <span>
+      <div class="key">&rarr;</div>
+      para subir canal
+    </span>
+    <span>
+      <div class="key">&crarr;</div>
+      para escribir canal
+    </span>
+    <span>
+      <div class="key text-key">Tab</div>
+      para&nbsp;<div id="clicks" class="color-red">apagar</div> clicks
+    </span>
+  </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>

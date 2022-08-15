@@ -1,0 +1,31 @@
+#logo {
+
+	position:absolute;							
+	top: 1%!important;										
+	left: 1%!important;										
+	margin: 0px 0 0 0px;    					
+	opacity: 1; 				
+	padding: none; 		
+	width:17%!important;
+	height:auto!important;					
+    
+}
+
+#alerta {
+
+}
+
+@font-face {
+	font-family: bankgothic;
+	src: url('./bankgothic.ttf');
+}
+.streetname{
+    position: absolute;
+    top: 10px;
+    width: 99%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: bankgothic;
+    text-shadow: 1px 1px 4px black;
+}

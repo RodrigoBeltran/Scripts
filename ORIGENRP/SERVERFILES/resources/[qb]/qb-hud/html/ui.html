@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body style="background-color: rgba(0,0,0,0);">
+    <audio src="confirmation.ogg" id="confirm-sound"></audio>
+    <audio src="seatbelt-buckle.ogg" id="abrochar"></audio>
+    <audio src="seatbelt-unbuckle.ogg" id="desabrochar"></audio>
+    <div class="zona-muerte">
+        <div class="zona-tiempo">
+            ¡Estás herido! Te desmayarás en <span class="tiempo"></span> segundos.
+        </div>
+        <div class="zona-respawn" style="display:none;">
+
+        </div>
+    </div>
+
+    <div class="zona-muerte">
+        <div class="zona-tiempo">
+            ¡Estás herido! Te desmayarás en <span class="tiempo"></span> segundos.
+        </div>
+        <div class="zona-respawn" style="display:none;">
+
+        </div>
+    </div>
+    <div class="zona-repostar">
+        <div class="texto">
+            Pusla <span class="coste">E</span> para dejar de repostar. </br> Precio <span class="coste">50$</span>
+        </div>
+
+    </div>
+    <div class="zona-entorno">
+        <div class="titulo-entorno">Confirmación de entorno</div>
+        <div class="texto-entorno">
+            Se vería a una persona armada intentando robar en el badulake.
+        </div>
+        <div class="loading">
+            <img src="loading.svg">
+        </div>
+        <div class="botones-confirmacion">
+            <div class="btn btn-left">
+                <div class="boton">↑</div>
+                <div style="padding-top:3px;">Confirmar</div>
+            </div>
+            <div class="btn btn-right">
+                <div class="boton">↓</div>
+                <div style="padding-top:3px;">Cancelar</div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="money-container" style="display:none;">
+        <div class="money-content">
+            <div class="money-cash">
+                <p class="munnie">&dollar;&nbsp;<span id="cash">0</span></p>
+            </div>
+            <div class="money-bank">
+                <p class="munnie">&dollar;&nbsp;<span id="bank">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="ui-container">
+        <div class="mini-logo">
+            <img src="https://i.imgur.com/cs1tvff.png">
+        </div>
+        <div class="ui-bar-container">
+            <div class="basic-info">
+                <div class="contenedor">
+                    <div class="health">
+                        <!-- <i id="health-icon" class="fas fa-heart"></i>
+                            <svg width="50" height="50" style="position: relative; left:22px;">
+                                <circle class="progress progress-health" stroke="green" stroke-width="3" style="stroke-opacity: 1; fill-opacity: 0.5;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+                            </svg> -->
+                        <div class="cuadro-estado" id="vida">
+                            <!-- <img src="https://i.imgur.com/E2XEtCj.png" class="icono"> -->
+                            <img src="health.svg" class="icono">
+                        </div>
+                    </div>
+                    <div class="armor">
+                        <!-- <i id="armor-icon" class="fas fa-shield-alt"></i>
+                            <svg width="50" height="50" style="position: relative; left:87px;">
+                                <circle class="progress progress-armor" stroke="blue" stroke-width="3" style="stroke-opacity: 1; fill-opacity: 0.5;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+                            </svg> -->
+                        <div class="cuadro-estado" id="armadura">
+                            <img src="https://i.imgur.com/e76rGT0.png" class="icono">
+                        </div>
+
+                    </div>
+                    <div class="hunger">
+                        <!-- <i id="hunger-icon" class="fas fa-hamburger"></i>
+                            <svg width="50" height="50" style="position: relative; left:45px;">
+                                <circle class="progress progress-hunger" stroke="orange" stroke-width="3" style="stroke-opacity: 1; fill-opacity: 0.5;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+                            </svg> -->
+                        <div class="cuadro-estado" id="hambre">
+                            <img src="https://i.imgur.com/jjlvEWX.png" class="icono">
+                        </div>
+                    </div>
+                    <div class="thirst">
+                        <!-- <i id="thirst-icon" class="fas fa-tint"></i>
+                            <svg width="50" height="50" style="position: relative; left:66px;">
+                                <circle class="progress progress-thirst" stroke="aqua" stroke-width="3" style="stroke-opacity: 1; fill-opacity: 0.5;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+                            </svg> -->
+                        <div class="cuadro-estado" id="sed">
+                            <img src="https://i.imgur.com/3rRj30P.png" class="icono">
+                        </div>
+                    </div>
+                    <div class="stress">
+                        <!-- <i id="stress-icon" class="fas fa-brain"></i>
+                            <svg width="50" height="50" style="position: relative; left:110px;">
+                                <circle class="progress progress-stress" stroke="red" stroke-width="3" style="stroke-opacity: 1; fill-opacity: 0.5;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+                            </svg> -->
+                        <div class="cuadro-estado" id="estress">
+                            <img src="https://i.imgur.com/imSyQ9f.png" class="icono">
+
+                        </div>
+                    </div>
+                    <div class="police">
+                        <!-- <i id="stress-icon" class="fas fa-brain"></i>
+                            <svg width="50" height="50" style="position: relative; left:110px;">
+                                <circle class="progress progress-stress" stroke="red" stroke-width="3" style="stroke-opacity: 1; fill-opacity: 0.5;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+                            </svg> -->
+                        <div class="cuadro-estado" id="police">
+                            <img src="https://i.imgur.com/Ejl72Gt.png" class="icono">
+
+                        </div>
+                    </div>
+                    <div class="voice">
+
+                        <div class="cuadro-estado" id="voz">
+                            <i id="voice-icon" class="fas fa-microphone"></i>
+                        </div>
+                        <div class="rango">
+                            Susurro
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui-car-container">
+            <div class="ui-car-speed">
+                <div class="speed-text">0</div>
+                <div class="speed-type">km/h</div>
+            </div>
+            <div class="rpm">
+                <div class="zona-izq">
+                    <div class="barra-izq"></div>
+                </div>
+                <div class="zona-der">
+                    <div class="barra-der"></div>
+                </div>
+
+            </div>
+            <div class="ui-car-fuel">
+                <div class="fuel-text">100</div>
+            </div>
+            <div class="ui-car-seatbelt"><img src="https://i.imgur.com/q4oXfRs.png" class="icon"></div>
+            <div class="ui-car-cruise"><img src="https://i.imgur.com/s2ITgll.png" class="icon"></div>
+            <div class="ui-car-nos" style="display:none;"><span class="nos-text">0</span> <span class="nos-label">Nos</span></div>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>

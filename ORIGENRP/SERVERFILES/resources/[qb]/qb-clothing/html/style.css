@@ -1,0 +1,722 @@
+button:hover, a:hover {
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+}
+
+@font-face {
+    font-family: bankgothic;
+    src: url('./bankgothic.ttf');
+}
+
+* {
+    user-select: none;
+    cursor: url('https://i.imgur.com/d9LjPxT.png'), auto;	
+
+}
+
+.container {
+    height: 100vh;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.clothing-menu-container {
+    display: none;
+    position: absolute;
+    min-height: 600px;
+    height: 669px;
+    width: 42vh;
+    background-color: #000000bf;
+    margin-right: 75px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px #0000008c;
+    overflow: visible;
+    margin-top: 224px;
+    right: -25vw;
+    box-shadow:0 0 20px black, inset 0 0 30px black;
+}
+
+.clothing-menu-header {
+    width: 100%;
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+}
+
+.clothing-menu-header-btn {
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 3.5vh;
+    border-bottom: 2px solid rgb(255 255 255);
+    transition: all 0.1s linear;
+    border-radius: 5px 5px 0 0;
+}
+
+.clothing-menu-header-btn:hover {
+    background-color: #b9b9b9a8;
+    color: black;
+}
+
+.selected {
+    background-color: #ffffff;
+    border-bottom: 2px solid rgb(255 255 255);
+    color: black;
+}
+
+.clothing-menu-header-btn>p {
+    font-family: bankgothic;
+    text-transform: uppercase;
+
+    font-size: 1.1vh;
+    letter-spacing: 0.1vh;
+}
+
+.clothing-menu-header-cameras {
+    position: fixed;
+    height: auto;
+    width: 454px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px #0000008c;
+    top: 148px;
+}
+
+.clothing-menu-header-camera-btn {
+    background-color: #000000;
+    width: 33.33%;
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 3.4vh;
+    transition: all 0.1s linear;
+}
+
+.selected-cam {
+    background-color: #ffffff;
+    color: black;
+}
+
+.clothing-menu-header-camera-btn:hover {
+    background-color: #ffffff86;
+    color: black;
+}
+
+.clothing-menu-header-camera-btn>i {
+    font-size: 1.4vh;
+}
+
+.clothing-menu-roomOutfits-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 87vh;
+    width: 92%;
+    background-color: #282e36;
+    overflow-y: scroll !important;
+}
+
+.clothing-menu-myOutfits-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 6vh;
+    height: 57vh;
+    width: 92%;
+    padding-right: 9px;
+    overflow-y: scroll !important;
+}
+
+.clothing-menu-outfit-option-button {
+    position: relative;
+    text-align: center;
+    line-height: 4.8vh;
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+    top: 2.3vh;
+    background-color: #b12424;
+    border-radius: 0.75vh;
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-outfit-option-button:hover {
+    background-color: #d62f2f;
+}
+
+.clothing-menu-outfit-option-button>p {
+    color: white;
+
+    text-transform: uppercase;
+    font-family: bankgothic;
+    letter-spacing: 0.1vh;
+    font-size: 1vh;
+}
+
+.clothing-menu-myOutfit-option-button {
+
+        position: absolute;
+        text-align: center;
+        width: 40%;
+        height: max-content;
+        left: 2vh;
+        top: 2.4vh;
+        background-color: #000000;
+        border-radius: 5px;
+        transition: ease-in-out 0.3s;
+        color: white;
+        padding: 1vh;
+}
+
+.clothing-menu-myOutfit-option-button:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.clothing-menu-myOutfit-option-button>p {
+    color: white;
+
+    text-transform: uppercase;
+    font-family: bankgothic;
+    letter-spacing: 0.1vh;
+
+}
+
+.clothing-menu-myOutfit-option-button-remove {
+    position: absolute;
+    text-align: center;
+
+    width: 35%;
+    height:max-content;
+    right: 2vh;
+    top: 2.4vh;
+        background-color: #000000;
+        border-radius: 5px;
+        transition: ease-in-out 0.3s;
+        color: white;
+        padding: 1vh;
+}
+
+.clothing-menu-myOutfit-option-button-remove:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.clothing-menu-myOutfit-option-button-remove>p {
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+    font-family: bankgothic;
+    letter-spacing: 0.1vh;
+}
+
+.clothing-menu-character-container {
+    display: none;
+    margin: 0 auto;
+    width: 92%;
+    overflow-y: scroll !important;
+    min-height: 600px;
+    height: 608px;
+    margin-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.clothing-menu-clothing-container {
+    display: none;
+    margin: 0 auto;
+    width: 92%;
+    overflow-y: scroll !important;
+    min-height: 600px;
+    height: 608px;
+    margin-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.clothing-menu-accessoires-container {
+    display: none;
+    margin: 0 auto;
+    width: 92%;
+    overflow-y: scroll !important;
+    min-height: 600px;
+    height: 608px;
+    margin-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(245, 245, 245, 0.089);
+}
+
+::-webkit-scrollbar {
+    width: 0.4vh;
+    background-color: rgba(245, 245, 245, 0.089);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffffdc;
+    margin-left: 5px;
+}
+
+.clothing-menu-option {
+    position: relative;
+    width: 94%;
+    margin-bottom: 1.5vh;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ffffff3b;
+    height: max-content;
+    box-shadow: 0 0 10px black;
+    padding: .6vh;
+}
+
+.clothing-menu-option-header {
+    color: black;
+    width: 100%;
+    margin-bottom: 0.7vh;
+}
+
+.clothing-menu-option-header>p {
+    font-family: bankgothic;
+
+    font-size: 12px;
+    letter-spacing: 0.1vh;
+    text-rendering: geometricPrecision !important;
+    text-align: center;
+}
+
+.clothing-menu-option-item {
+    float: left;
+    height: 50%;
+    width: 33%;
+    margin-left: 49px;
+    padding: 0px 0 0px 5px;
+}
+
+.clothing-menu-option-item-left {
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+        width: 25px;
+        background: radial-gradient(circle, rgb(0 0 0) 0%, rgb(0 0 0 / 88%) 100%);
+        color: #ffffff;
+        text-align: center;
+        line-height: 29px;
+        border-radius: 5px 0 0 5px;
+        transition: ease-in-out 0.3s;
+        height: 25px;
+        float: left;
+        border: 1px solid #ffffff26;
+}
+
+.clothing-menu-option-item-left:hover {
+
+    border-color:black;
+    background: radial-gradient(circle, rgb(255 255 255) 0%, rgb(255 255 255 / 66%) 100%);
+    color: black;
+}
+
+.clothing-menu-option-item-left>i, .clothing-menu-option-item-right>i, .clothing-menu-option-item-left, .clothing-menu-header, .clothing-menu-header-camera-btn, .clothing-menu-myOutfit-option-button, .clothing-menu-myOutfit-option-button-remove,  .clothing-menu-myOutfit-option-button p, .clothing-menu-myOutfit-option-button-remove p{
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+}
+
+.clothing-menu-option-item-right {
+    width: 25px;
+    background: radial-gradient(circle, rgb(0 0 0) 0%, rgb(0 0 0 / 88%) 100%);
+    color: #ffffff;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 0 5px 5px 0;
+    transition: ease-in-out 0.3s;
+    height: 25px;
+    float: left;
+    border: 1px solid #ffffff26;
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+}
+
+.clothing-menu-option-item-right:hover {
+    border-color:black;
+
+    background: radial-gradient(circle, rgb(255 255 255) 0%, rgb(255 255 255 / 66%) 100%);
+    color: black;
+}
+
+.ayuda {
+    position: fixed;
+    left: 44%;
+    bottom: 14px;
+    font-family: 'bankgothic';
+    color: white;
+    text-shadow: 0 0 13px #000;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+}
+
+.ayuda .tecla {
+    padding: 0px 6px;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    font-family: 'bankgothic';
+}
+
+.item-number {
+        cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+        width: 30px;
+        height: 25px;
+        background: none;
+        border: none;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 0.1vh;
+        color: white;
+        outline: none;
+        transition: all 0.1s linear;
+        float: left;
+        background-color: black;
+}
+
+.item-number:focus {
+    border-bottom: 2px solid rgb(232 182 0);
+}
+
+.clothing-menu-option-item-header {
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 0.7em;
+    letter-spacing: 0.07vh;
+    color: rgb(0, 0, 0);
+    margin-left: -33px;
+    text-align: center;
+}
+
+.clothing-menu-option-item-header>p {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.2vh;
+}
+
+.clothing-menu-option-buttons {
+    position: fixed;
+    width: 59px;
+    overflow: visible;
+    height: 200px;
+    height: 200px;
+    bottom: 123px;
+    right: 538px;
+}
+
+.clothing-menu-option-button {
+    padding: 5px;
+    height: 28px;
+    width: 30px;
+    background-color: #ffffff;
+    transition: all 0.1s linear;
+    right: 10px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    transition: ease-in-out 0.3s;
+    overflow: hidden;
+    float: right;
+}
+
+.clothing-menu-option-button:hover {
+    background-color: #000000;
+    color: white;
+    width: 116px;
+    transition: ease-in-out 0.3s;
+}
+
+.int-boton {
+    width: 120px;
+}
+
+.clothing-menu-option-button:hover .label {
+    opacity: 100;
+}
+
+.int-boton i {
+    font-size: 29px;
+    float: left;
+    margin-right: 9px;
+}
+
+.clothing-menu-option-button .label {
+    opacity: 0;
+    font-size: 1em;
+    font-family: bankgothic;
+
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+    transition: ease-in-out 0.5s;
+    margin-top: 6px;
+}
+
+.clothing-menu-save-outfit-name {
+    display: none;
+    position: relative;
+    width: 40vh;
+    height: 25vh;
+    background: #424953;
+    margin: 0 auto;
+    top: 30%;
+    border-radius: 0.7vh;
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+}
+
+.clothing-menu-save-outfit-name-buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 17%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+   
+
+}
+
+.clothing-menu-save-outfit-name-button {
+    position: relative;
+    background: #b12424;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 4vh;
+    transition: all 0.1s linear;
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+}
+
+.clothing-menu-save-outfit-name-button:hover {
+    background: #d62f2f;
+}
+
+.clothing-menu-save-outfit-name-button>p {
+    font-family: bankgothic;
+    font-size: 1.1vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.clothing-menu-save-outfit-name-header {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    line-height: 5vh;
+}
+
+.clothing-menu-save-outfit-name-header>p {
+    font-family: bankgothic;
+    font-size: 1.5vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+#outfit-name {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    background: none;
+    border: none;
+    outline: none;
+    background: #292e36;
+    width: 60%;
+    height: 30%;
+    text-align: center;
+    border-bottom: 3px solid #791a1a;
+    transition: all 0.1s linear;
+}
+
+#outfit-name:focus {
+    border-bottom: 3px solid #f73b3b;
+}
+
+#outfit-name {
+    color: white;
+    font-family: bankgothic;
+    font-size: 1.75vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#outfit-name::placeholder {
+    color: rgba(255, 255, 255, 0.404);
+    font-family: bankgothic;
+    font-size: 1.75vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+
+}
+
+.change-camera-buttons {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 13vh;
+    bottom: 13px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 55%) 0px 0px 20px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.change-camera-button {
+    position: relative;
+    width: 50%;
+    float: left;
+    background: #000000;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.change-camera-button:hover {
+    background: #ffffff;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.change-camera-button:hover i {
+    color: black;
+}
+
+.change-camera-button>i {
+    font-size: 2em;
+    color: white;
+    line-height: 48px;
+}
+
+.change-camera-footer {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    background: #ffffff;
+    line-height: 1.5vh;
+}
+
+.change-camera-footer>p {
+    font-family: bankgothic;
+
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.1vh;
+}
+
+.clothing-menu-myOutfits-container .clothing-menu-option{
+    
+    position: relative;
+    width: 94%;
+    margin-bottom: 1.5vh;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ffffff3b;
+    box-shadow: 0 0 10px black;
+    padding: .6vh;
+    height: 53px;
+}
+
+.clothing-menu-myOutfits-container .clothing-menu-option-header>p{
+    font-size: 1.3vh;
+}
+
+@media(max-height:1000px) {
+    body {
+        overflow: hidden;
+    }
+    .clothing-menu-container {
+        position: absolute;
+        min-height: 600px;
+        height: 604px;
+        background-color: #000000bf;
+        margin-right: 14px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 5px #0000008c;
+        overflow: visible;
+        margin-top: 66px;
+        width: 429px;
+     
+    }
+    .clothing-menu-header-cameras {
+    cursor: url('https://i.imgur.com/dAD9nIy.png'), auto !important;	
+
+        position: fixed;
+        height: auto;
+        width: 429px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 5px #0000008c;
+        top: 23px;
+    }
+    .clothing-menu-option-buttons {
+        position: fixed;
+        width: 59px;
+        overflow: visible;
+        height: 200px;
+        bottom: -13px;
+        right: 450px;
+    }
+    .clothing-menu-character-container,
+    .clothing-menu-accessoires-container,
+    .clothing-menu-roomOutfits-container,
+    .clothing-menu-myOutfits-container {
+        margin: 0 auto;
+        width: 90%;
+        overflow-y: scroll !important;
+        min-height: 554px;
+        height: 538px;
+        margin-top: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .clothing-menu-option {
+        position: relative;
+        width: 100%;
+        margin-bottom: 1.5vh;
+        background-color: black;
+        border-radius: 5px;
+        border: 1px solid #ffffff78;
+        height: 124px;
+    }
+    .clothing-menu-header {
+        width: 100%;
+    }
+    .clothing-menu-header-btn>p {
+        font-size: 1.7vh;
+    }
+    .item-number {
+        font-size: 1.8vh;
+    }
+    .clothing-menu-option-item {
+        margin-left: 48px;
+    }
+}

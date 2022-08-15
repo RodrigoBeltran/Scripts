@@ -1,0 +1,238 @@
+@font-face {
+    font-family: bankgothic;
+    src: url('./bankgothic.ttf');
+}
+
+body {
+    background: none !important;
+}
+
+.container {
+    font-family: bankgothic;
+    width: 100%;
+    height: 100%;
+    padding: 3.2vh 5.6vh;
+    /* animation: anim-boton 0.3s ease-in-out forwards; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0 0 20px 12px #000000ad;
+    background-color: #1f1f1fd9;
+    display: none;
+}
+
+.titulo h1 {
+    color: white;
+    font-family: 'bankgothic';
+    text-align: left;
+    text-shadow: 0 0 6px white;
+    overflow: visible !important;
+    animation: sombra-titulo ease-in-out 3s infinite;
+    overflow: visible;
+    font-size: 54px;
+    padding: 16px 0;
+    z-index: 99999;
+}
+
+.barra {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin-top: 1.4vh;
+    box-shadow: 0 0 5px white;
+    margin-bottom: 8vh;
+}
+
+.contenedor {
+    width: 34vh;
+}
+
+.spawn-locations {
+    width: 100%;
+    animation: entrada 0.5s ease-in-out forwards;
+    height: 370px;
+    opacity: 0;
+}
+
+.location {
+    background-color: rgb(0 0 0 / 80%);
+    margin-bottom: .75vh;
+    transition: 0.2s;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    width: 44%;
+    float: left;
+    margin-right: 2vh;
+    border: 1px solid #ffffff26;
+    padding: 1vh;
+    margin-bottom: 2vh;
+    animation: anim-boton 0.3s ease-in-out forwards;
+    opacity: 0;
+}
+
+.location>p {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 1.6vh;
+    padding: 10px 0;
+    transition: 0.3s ease-in-out;
+}
+
+#location i {
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+.location:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05) !important;
+}
+
+.selected {
+    background-image: url("https://i.imgur.com/upZzDJv.gif");
+    color: black !important;
+    box-shadow: 0 0 10px white;
+}
+
+.selected>p {
+    color: black !important;
+}
+
+.submit-spawn {
+    background-color: white;
+    background-image: url(https://i.imgur.com/upZzDJv.gif);
+    width: 94%;
+    height: 5.5vh;
+    margin-bottom: .75vh;
+    transition: 0.2s;
+    box-shadow: 0 0 10px white;
+    border-radius: 5px;
+    float: left;
+    margin-top: 1.2vh;
+}
+
+.submit-spawn>p {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 5.5vh;
+    font-size: 1.3em;
+    font-family: bankgothic;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.submit-spawn:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#spawn-label {
+    font-weight: bold;
+}
+
+.loclabel {
+    width: 28vh;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(0 0 0);
+    border-radius: 5px;
+    padding: 29px 0 20px 0;
+    box-shadow: 0 0 10px #000;
+}
+
+.loclabel>p {
+    font-family: bankgothic;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.logo-flotante {
+    position: fixed;
+    top: 2vh;
+    right: 5vh;
+    animation-name: shake-slow;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.logo-flotante img {
+    width: 10vh;
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    100% {
+        opacity: 100;
+        transform: scale(1);
+    }
+}
+
+@media(max-height:720px) {
+    body {
+        overflow: hidden;
+    }
+    /* .spawn-locations {
+        width: 276px;
+    }
+    .loclabel,
+    .location,
+    .submit-spawn {
+        width: 100%;
+    } */
+}
+
+@keyframes anim-boton {
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 100;
+    }
+}
+
+@keyframes sombra-titulo {
+    0% {
+        text-shadow: 0 0 6px white;
+    }
+    50% {
+        text-shadow: 0 0 16px white;
+    }
+    100% {
+        text-shadow: 0 0 6px white;
+    }
+}
+
+@keyframes shake-slow {
+    0% {
+        transform: translate(0, 0) rotate(0)
+    }
+    15% {
+        transform: translate(4px, 2px) rotate(-.1deg)
+    }
+    30% {
+        transform: translate(3px, -5px) rotate(0.5deg)
+    }
+    50% {
+        transform: translate(4px, -3px) rotate(-.5deg)
+    }
+    70% {
+        transform: translate(-3px, 3px) rotate(1.2deg)
+    }
+    85% {
+        transform: translate(-3px, 3px) rotate(1.2deg)
+    }
+    100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
